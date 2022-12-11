@@ -10,6 +10,7 @@ import { NzTreeNodeOptions } from 'ng-zorro-antd/tree';
       nzShowSearch
       nzPlaceHolder="Please select"
       nzVirtualHeight="300px"
+      nzHideUnMatched="true"
     ></nz-tree-select>
   `
 })
