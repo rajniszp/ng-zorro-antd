@@ -32,11 +32,11 @@ export class NzTreeBaseService {
    */
   initTree(nzNodes: NzTreeNode[]): void {
     this.rootNodes = nzNodes;
-    this.expandedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isExpanded); // this.expandedNodeList = [];
-    this.selectedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isSelected); // this.selectedNodeList = [];
-    this.halfCheckedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isHalfChecked); //this.halfCheckedNodeList = [];
-    this.checkedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isChecked); //this.checkedNodeList = [];
-    this.matchedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isMatched); //this.matchedNodeList = [];
+    this.expandedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isExpanded);
+    this.selectedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isSelected);
+    this.halfCheckedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isHalfChecked);
+    this.checkedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isChecked);
+    this.matchedNodeList = nzNodes == null ? [] : nzNodes.filter(n => n.isMatched);
   }
 
   flattenTreeData(nzNodes: NzTreeNode[], expandedKeys: NzTreeNodeKey[] | true = []): void {
